@@ -1,7 +1,7 @@
 public class ValidacionCadenasPila{
     Public static void main (String[] args){
 
-        String[] llaves = {"{","{","}","}"};
+        String[] llaves = {"{","{","}","}","}"};
 
         //Cree una pila de llaves y verifique si las llaves estan
         //Completas,ed decir, una llave que abre riene una llave que cierra
@@ -14,6 +14,10 @@ public class ValidacionCadenasPila{
         }
 
         system.out.println(p);
+
+        int contador1= 0, contador2= 0;
+
+        int tam = p.size();
 
         for (int i=0; i <p.size (); i ++) {
             if (p.peek().equals(anObject:"{")){
