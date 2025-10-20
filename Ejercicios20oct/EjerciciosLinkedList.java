@@ -3,7 +3,7 @@ import java.util.Iterator;
 
 public class EjerciciosLinkedList {
 
-    // Método para remover duplicados
+    // Remover duplicados
     public static void removerDuplicados(LinkedList<Integer> lista) {
         LinkedList<Integer> sinDuplicados = new LinkedList<>();
         for (Integer num : lista) {
@@ -15,7 +15,7 @@ public class EjerciciosLinkedList {
         lista.addAll(sinDuplicados);
     }
 
-    // Método para mover el último elemento al inicio
+    // Mover el último elemento al inicio
     public static void moverUltimoAlInicio(LinkedList<Integer> lista) {
         if (lista.size() > 1) {
             Integer ultimo = lista.removeLast();
@@ -23,7 +23,7 @@ public class EjerciciosLinkedList {
         }
     }
 
-    // Método para separar pares e impares
+    // Separar pares e impares
     public static void separarParesImpares(LinkedList<Integer> lista) {
         LinkedList<Integer> pares = new LinkedList<>();
         LinkedList<Integer> impares = new LinkedList<>();
@@ -40,7 +40,7 @@ public class EjerciciosLinkedList {
         System.out.println("Lista de impares: " + impares);
     }
 
-    // Método para imprimir la lista al revés
+    // Imprimir la lista al revés
     public static void imprimirReversa(LinkedList<Integer> lista) {
         Iterator<Integer> it = lista.descendingIterator();
         System.out.print("Lista invertida: ");
@@ -50,7 +50,7 @@ public class EjerciciosLinkedList {
         System.out.println();
     }
 
-    // Método principal para probar todo
+    // Probar todo
     public static void main(String[] args) {
         LinkedList<Integer> numeros = new LinkedList<>();
         numeros.add(3);
