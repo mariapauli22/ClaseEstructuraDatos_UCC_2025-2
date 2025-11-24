@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class PauliBankApp {
-    public static void main (Straing[] args) {
+    public static void main (String[] args) {
         SistemaPauliBank sistema = new SistemaPauliBank ();
         Scanner sc = new Scanner (System.in);
 
