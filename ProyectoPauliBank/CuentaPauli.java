@@ -1,12 +1,12 @@
-Public class CuentaPauli {
-    Private String id;
-    Private String nombre;
-    Private double saldo;
+public class CuentaPauli {
+    private String id;
+    private String nombre;
+    private double saldo;
 
-    public CuentaPauli (String id,String nombre, double saldo) {
-        this.id= id;
-        this.nombre= nombre; 
-        this.saldo= saldo;
+    public CuentaPauli(String id, String nombre, double saldo) {
+        this.id = id;
+        this.nombre = nombre;
+        this.saldo = saldo;
     }
 
     public String getId() {
@@ -17,41 +17,28 @@ Public class CuentaPauli {
         return nombre;
     }
 
-    public double getSaldo (){
+    public double getSaldo() {
         return saldo;
-
     }
 
-    public void setNombre (String nombre){
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public void depositar (double monto){
+    public void depositar(double monto) {
         saldo += monto;
-        }
-    
+    }
+
     public boolean retirar(double monto) {
         if (saldo >= monto) {
-            saldo-= monto;
+            saldo -= monto;
             return true;
         }
         return false;
-
     }
 
     @Override
-
-    public string toString(){
+    public String toString() {
         return "ID: " + id + " | Nombre: " + nombre + " | Saldo: " + saldo;
-
     }
-
-
-
-
-
-
-
-
-
 }
